@@ -1,3 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Dart dosyalarını Dart dili olarak algıla
 *.dart linguist-language=Dart
+
+# Derleme ve bağımlılık dizinlerini analizden çıkar
+build/* linguist-vendored
+third_party/* linguist-vendored
+
+# Diğer yaygın dizinleri analizden çıkar (varsa)
+ios/* linguist-vendored
+android/* linguist-vendored
+web/* linguist-vendored
